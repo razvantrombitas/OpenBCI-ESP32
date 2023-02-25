@@ -7,7 +7,7 @@ This project uses an EEG headset with 8 channels, of which only 4 are used, to c
 
 In terms of data processing, the project uses a number of mathematical calculations to determine the level of attention, concentration, and stress based on the band power values calculated using the FFT. 
 
-{{:iothings:proiecte:2022:brain_waves.png?720|}}
+![1](https://user-images.githubusercontent.com/59019060/221339713-7435b549-2664-491f-95f9-1eb2684608f5.png)
 
 
 The project also uses the moving average filter to smooth the raw EEG signals, to reduce noise and high frequency artifacts. This is a common technique used in EEG signal processing.
@@ -24,11 +24,11 @@ The headset with EEG electrodes is used to place electrodes on the scalp to reco
 
 The acquired EEG signal was collected from the frontal lobe and temporal lobe from both hemispheres (left and right) using 4 electrodes positioned according to the 10-20 system. The electrodes were placed on the frontal and temporal lobes of both hemispheres, with the odd numbered channels (1, 3) representing the frontal and temporal lobes of the right hemisphere, and the even numbered channels (2, 4) representing the frontal and temporal lobes of the left hemisphere. This positioning allowed for the acquisition of EEG signals from both hemispheres, providing a more comprehensive understanding of brain activity.
 
-{{:iothings:proiecte:2022:pozitionare_electrozi.jpg?360|}}
+![2](https://user-images.githubusercontent.com/59019060/221339715-799a2ef7-8c40-4b8e-bac1-2c63448e3fa5.jpg)
 
 The entire hardware setup can be seen in the following picture: 
 
-{{:iothings:proiecte:2022:setup.png?720|}}
+![3](https://user-images.githubusercontent.com/59019060/221339716-dab0172f-bfc2-4542-b9ba-44ef941bcdfa.png)
 
 
 
@@ -83,7 +83,7 @@ void calculateFFT(float channelData[], double vReal[], double vImag[]){
 
 Full code representation: 
 
-{{:iothings:proiecte:2022:softdiag.png?720|}}
+![4](https://user-images.githubusercontent.com/59019060/221339719-c044d42b-d7de-4a49-bfa8-b5d5b497921f.png)
 
 
 
@@ -105,16 +105,15 @@ Finally, the script updates the chart with new data by periodically reading the 
 In this project, I used WebSerial for debugging purposes. WebSerial allows the user to view the serial output of the ESP32 in a web browser, which helps in identifying and troubleshooting any issues during the development process. This feature was very helpful in debugging the code and making sure that the data was being transmitted and processed correctly.
 
 
-{{:iothings:proiecte:2022:webserial.jpg?720|}}
+![5](https://user-images.githubusercontent.com/59019060/221339722-1d10f015-9c5a-4321-986e-60f738235a0c.jpg)
 
 
 The data in Firebase has the following template: 
 
-{{:iothings:proiecte:2022:firebase_data.jpg?720|}}
+![6](https://user-images.githubusercontent.com/59019060/221339727-30dfd997-33b3-477e-b6b2-8ec1d1c8a164.jpg)
 
-{{:iothings:proiecte:2022:graph2.jpg?720|}}
 
-{{:iothings:proiecte:2022:graph1.jpg?360|}}
+![7](https://user-images.githubusercontent.com/59019060/221339728-431e042e-59fa-4063-a025-1e7384e1eb2d.jpg)
 
 In addition to the real-time processing and visualization of EEG data, this project also allows for the extraction and analysis of EEG data in a post-processing manner. The OpenBCI Cyton board is able to save the EEG data in a .csv file format, which can be easily exported and analyzed using a script such as Python. By using a script, it is possible to perform more advanced and detailed analysis of the EEG data.
 
@@ -122,8 +121,7 @@ For example, by using a script, it is possible to determine the level of correla
 
 Output from the Python script: 
 
-{{:iothings:proiecte:2022:corr.jpg?720|}}
-
+![8](https://user-images.githubusercontent.com/59019060/221339730-da026571-6772-41de-b536-93c437e9b0a0.jpg)
 
 
 # 5. Conclusions
