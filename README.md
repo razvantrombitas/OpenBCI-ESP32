@@ -119,6 +119,12 @@ In addition to the real-time processing and visualization of EEG data, this proj
 
 For example, by using a script, it is possible to determine the level of correlation between multiple users or multiple EEG recordings. This can be done by comparing the EEG data of different users or recordings and calculating the correlation coefficient between them. The correlation coefficient is a measure of the linear relationship between two variables and ranges from -1 to 1. A correlation coefficient of 1 indicates a perfect positive correlation, a coefficient of -1 indicates a perfect negative correlation, and a coefficient of 0 indicates no correlation. By calculating the correlation coefficient, it is possible to determine the similarity or dissimilarity between different EEG recordings.
 
+From the main folder run these commands in order to determine the correlation coefficient:
+
+`python test.py medium`
+
+`python .\analysis.py .\eeg_data\data_3.csv .\eeg_data\data_2.csv`
+
 Output from the Python script: 
 
 ![8](https://user-images.githubusercontent.com/59019060/221339730-da026571-6772-41de-b536-93c437e9b0a0.jpg)
