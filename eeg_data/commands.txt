@@ -1,0 +1,7 @@
+cd  scripts_folder
+python test.py medium
+python .\analysis.py .\eeg_data\data_3.csv .\eeg_data\data_2.csv
+
+
+
+
